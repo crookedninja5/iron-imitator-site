@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iron Imitator - Debut Album Coming Soon</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: black;
+      color: white;
+      background-image: url('cover.png');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(to right, #ff0040, #ff8000);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .album-preview {
+      margin-bottom: 2rem;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 2px solid white;
+      border-radius: 10px;
+    }
+    .videos iframe {
+      margin: 1rem;
+      max-width: 90vw;
+      height: 200px;
+      border: none;
+    }
+    .social {
+      margin-top: 2rem;
+    }
+    .social a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>IRON IMITATOR</h1>
+    <p>Debut Album Coming Soon</p>
+    <img src="cover.png" alt="Album Cover" class="album-preview" />
+    <div class="videos">
+      <iframe src="https://www.youtube.com/embed/8PYvNeXLfD0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/lh-PwcGpYa0" allowfullscreen></iframe>
+    </div>
+    <div class="social">
+      <a href="https://youtube.com/@IronImitator" target="_blank">YouTube</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+  </div>
+</body>
+</html>
